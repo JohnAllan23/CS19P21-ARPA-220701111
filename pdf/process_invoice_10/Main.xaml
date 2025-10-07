@@ -1,0 +1,256 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C1146EB64EB_v2_sub_generateChatCompletion_Create.Bundle;assembly=C1146EB64EB_v2_sub_g.6CFuj20EjKN1cZppJ3YaQx13" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>C1146EB64EB_v2_sub_g.6CFuj20EjKN1cZppJ3YaQx13</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="901.6000000000001,1928" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="output" />
+      <Variable x:TypeArguments="x:String" Name="Amount" />
+      <Variable x:TypeArguments="x:String" Name="final" />
+      <Variable x:TypeArguments="x:String" Name="second" />
+      <Variable x:TypeArguments="x:String" Name="genai_output" />
+      <Variable x:TypeArguments="x:String" Name="ocr_output" />
+      <Variable x:TypeArguments="scg:List(x:Object)" Name="result" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage Message="{x:Null}" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="457.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" />
+    <uasc:BuildCollection x:TypeArguments="s:Int32[]" Items="{x:Null}" NextItems="{x:Null}" DisplayName="Build Collection" FirstItem="[{1,2,3}]" sap:VirtualizedContainerService.HintSize="457.6,174.4" sap2010:WorkflowViewState.IdRef="BuildCollection`1_1" Result="[result]" />
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="457.6,297.6" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+    </ui:RetryScope>
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="Invoice 2.pdf" sap:VirtualizedContainerService.HintSize="457.6,115.2" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[output]" />
+    <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Payments" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="457.6,328.8" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[final]" Source="[output]" StartingText="Ground Total" />
+    <ui:Matches BuilderPattern="Ground Total \$?([\d,]+\.\d{2})" DisplayName="Find Matching Patterns" FirstMatch="[second]" sap:VirtualizedContainerService.HintSize="457.6,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[output]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;Ground Total \\$?([\\d,]+\\.\\d{2})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="Ground Total \$?([\d,]+\.\d{2})" RegexOption="IgnoreCase, Compiled" />
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="1ab76fb8-649b-4d1e-ab33-1f1146eb64eb" DisplayName="Connector activity" sap:VirtualizedContainerService.HintSize="416,424" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="modelName" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">gpt-4o-2024-11-20</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="prompt" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">["From"+output+"Extract the Ground Total"]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+        <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+        <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+        <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+        <isactr:FieldObject Name="topK" Type="FieldArgument" />
+        <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">None</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="_file" Type="FieldArgument" />
+        <isactr:FieldObject Name="folderKey" Type="FieldArgument" />
+        <isactr:FieldObject Name="topP" Type="FieldArgument" />
+        <isactr:FieldObject Name="indexID" Type="FieldArgument" />
+        <isactr:FieldObject Name="numberOfResults" Type="FieldArgument" />
+        <isactr:FieldObject Name="top_p" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64">1</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="instruction" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="temperature" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Double">0</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64">0</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64">0</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="n" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64">1</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="_stop" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_text" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[genai_output]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="invoice1.pdf" sap:VirtualizedContainerService.HintSize="416,189.6" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[ocr_output]">
+      <ui:ReadPDFWithOCR.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+          <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" NoopExecution="False" />
+        </ActivityFunc>
+      </ui:ReadPDFWithOCR.OCREngine>
+    </ui:ReadPDFWithOCR>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[ocr_output]" />
+  </Sequence>
+</Activity>
